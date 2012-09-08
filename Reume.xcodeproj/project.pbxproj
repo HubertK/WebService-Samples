@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39BDE34715FBEA9700EE4411 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BDE34615FBEA9700EE4411 /* UIKit.framework */; };
+		39BDE34915FBEA9700EE4411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BDE34815FBEA9700EE4411 /* Foundation.framework */; };
+		39BDE34B15FBEA9700EE4411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BDE34A15FBEA9700EE4411 /* CoreGraphics.framework */; };
+		39BDE35115FBEA9700EE4411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE34F15FBEA9700EE4411 /* InfoPlist.strings */; };
+		39BDE35315FBEA9700EE4411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BDE35215FBEA9700EE4411 /* main.m */; };
+		39BDE35715FBEA9700EE4411 /* HKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BDE35615FBEA9700EE4411 /* HKAppDelegate.m */; };
+		39BDE35A15FBEA9700EE4411 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE35815FBEA9700EE4411 /* MainStoryboard.storyboard */; };
+		39BDE35D15FBEA9700EE4411 /* HKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BDE35C15FBEA9700EE4411 /* HKFirstViewController.m */; };
+		39BDE35F15FBEA9700EE4411 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE35E15FBEA9700EE4411 /* first.png */; };
+		39BDE36115FBEA9700EE4411 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE36015FBEA9700EE4411 /* first@2x.png */; };
+		39BDE36415FBEA9700EE4411 /* HKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BDE36315FBEA9700EE4411 /* HKSecondViewController.m */; };
+		39BDE36615FBEA9700EE4411 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE36515FBEA9700EE4411 /* second.png */; };
+		39BDE36815FBEA9700EE4411 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BDE36715FBEA9700EE4411 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39BDE34215FBEA9700EE4411 /* Reume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BDE34615FBEA9700EE4411 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39BDE34815FBEA9700EE4411 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39BDE34A15FBEA9700EE4411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39BDE34E15FBEA9700EE4411 /* Reume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reume-Info.plist"; sourceTree = "<group>"; };
+		39BDE35015FBEA9700EE4411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39BDE35215FBEA9700EE4411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39BDE35415FBEA9700EE4411 /* Reume-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reume-Prefix.pch"; sourceTree = "<group>"; };
+		39BDE35515FBEA9700EE4411 /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
+		39BDE35615FBEA9700EE4411 /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
+		39BDE35915FBEA9700EE4411 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		39BDE35B15FBEA9700EE4411 /* HKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKFirstViewController.h; sourceTree = "<group>"; };
+		39BDE35C15FBEA9700EE4411 /* HKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKFirstViewController.m; sourceTree = "<group>"; };
+		39BDE35E15FBEA9700EE4411 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		39BDE36015FBEA9700EE4411 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		39BDE36215FBEA9700EE4411 /* HKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKSecondViewController.h; sourceTree = "<group>"; };
+		39BDE36315FBEA9700EE4411 /* HKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKSecondViewController.m; sourceTree = "<group>"; };
+		39BDE36515FBEA9700EE4411 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		39BDE36715FBEA9700EE4411 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39BDE33F15FBEA9700EE4411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BDE34715FBEA9700EE4411 /* UIKit.framework in Frameworks */,
+				39BDE34915FBEA9700EE4411 /* Foundation.framework in Frameworks */,
+				39BDE34B15FBEA9700EE4411 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39BDE33715FBEA9700EE4411 = {
+			isa = PBXGroup;
+			children = (
+				39BDE34C15FBEA9700EE4411 /* Reume */,
+				39BDE34515FBEA9700EE4411 /* Frameworks */,
+				39BDE34315FBEA9700EE4411 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39BDE34315FBEA9700EE4411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BDE34215FBEA9700EE4411 /* Reume.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BDE34515FBEA9700EE4411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39BDE34615FBEA9700EE4411 /* UIKit.framework */,
+				39BDE34815FBEA9700EE4411 /* Foundation.framework */,
+				39BDE34A15FBEA9700EE4411 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39BDE34C15FBEA9700EE4411 /* Reume */ = {
+			isa = PBXGroup;
+			children = (
+				39BDE35515FBEA9700EE4411 /* HKAppDelegate.h */,
+				39BDE35615FBEA9700EE4411 /* HKAppDelegate.m */,
+				39BDE35815FBEA9700EE4411 /* MainStoryboard.storyboard */,
+				39BDE35B15FBEA9700EE4411 /* HKFirstViewController.h */,
+				39BDE35C15FBEA9700EE4411 /* HKFirstViewController.m */,
+				39BDE35E15FBEA9700EE4411 /* first.png */,
+				39BDE36015FBEA9700EE4411 /* first@2x.png */,
+				39BDE36215FBEA9700EE4411 /* HKSecondViewController.h */,
+				39BDE36315FBEA9700EE4411 /* HKSecondViewController.m */,
+				39BDE36515FBEA9700EE4411 /* second.png */,
+				39BDE36715FBEA9700EE4411 /* second@2x.png */,
+				39BDE34D15FBEA9700EE4411 /* Supporting Files */,
+			);
+			path = Reume;
+			sourceTree = "<group>";
+		};
+		39BDE34D15FBEA9700EE4411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39BDE34E15FBEA9700EE4411 /* Reume-Info.plist */,
+				39BDE34F15FBEA9700EE4411 /* InfoPlist.strings */,
+				39BDE35215FBEA9700EE4411 /* main.m */,
+				39BDE35415FBEA9700EE4411 /* Reume-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39BDE34115FBEA9700EE4411 /* Reume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "Reume" */;
+			buildPhases = (
+				39BDE33E15FBEA9700EE4411 /* Sources */,
+				39BDE33F15FBEA9700EE4411 /* Frameworks */,
+				39BDE34015FBEA9700EE4411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reume;
+			productName = Reume;
+			productReference = 39BDE34215FBEA9700EE4411 /* Reume.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39BDE33915FBEA9700EE4411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HK;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Hubert Kunnemeyer";
+			};
+			buildConfigurationList = 39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "Reume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 39BDE33715FBEA9700EE4411;
+			productRefGroup = 39BDE34315FBEA9700EE4411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39BDE34115FBEA9700EE4411 /* Reume */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39BDE34015FBEA9700EE4411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BDE35115FBEA9700EE4411 /* InfoPlist.strings in Resources */,
+				39BDE35A15FBEA9700EE4411 /* MainStoryboard.storyboard in Resources */,
+				39BDE35F15FBEA9700EE4411 /* first.png in Resources */,
+				39BDE36115FBEA9700EE4411 /* first@2x.png in Resources */,
+				39BDE36615FBEA9700EE4411 /* second.png in Resources */,
+				39BDE36815FBEA9700EE4411 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39BDE33E15FBEA9700EE4411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BDE35315FBEA9700EE4411 /* main.m in Sources */,
+				39BDE35715FBEA9700EE4411 /* HKAppDelegate.m in Sources */,
+				39BDE35D15FBEA9700EE4411 /* HKFirstViewController.m in Sources */,
+				39BDE36415FBEA9700EE4411 /* HKSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39BDE34F15FBEA9700EE4411 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BDE35015FBEA9700EE4411 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39BDE35815FBEA9700EE4411 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BDE35915FBEA9700EE4411 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39BDE36915FBEA9700EE4411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		39BDE36A15FBEA9700EE4411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39BDE36C15FBEA9800EE4411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reume/Reume-Prefix.pch";
+				INFOPLIST_FILE = "Reume/Reume-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39BDE36D15FBEA9800EE4411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reume/Reume-Prefix.pch";
+				INFOPLIST_FILE = "Reume/Reume-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "Reume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BDE36915FBEA9700EE4411 /* Debug */,
+				39BDE36A15FBEA9700EE4411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "Reume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BDE36C15FBEA9800EE4411 /* Debug */,
+				39BDE36D15FBEA9800EE4411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39BDE33915FBEA9700EE4411 /* Project object */;
+}
