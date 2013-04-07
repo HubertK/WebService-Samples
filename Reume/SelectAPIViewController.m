@@ -9,6 +9,9 @@
 #import "SelectAPIViewController.h"
 
 @interface SelectAPIViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *dribbbleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *weatherLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bestsellersLabel;
 
 @end
 
@@ -27,11 +30,11 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.backgroundView = [[UIView alloc]init];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Pattern02.png"]];
+    _dribbbleLabel.font = [UIFont fontWithName:@"HandsomeBold" size:34.0f];
+    _weatherLabel.font = [UIFont fontWithName:@"Aller" size:26.0f];
+    _bestsellersLabel.font = [UIFont fontWithName:@"Aller" size:26.0f];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,70 +43,92 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *CellIdentifier = @"Cell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    
+//    // Configure the cell...
+//    
+//    return cell;
+//}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // Configure the cell...
+    NSInteger section = indexPath.section;
+    if (section == 0) {
+        cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CellGreenTint.png"]];
+    }
+    else if (section == 1) {
+        cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CellPurpleTint.png"]];
+    }
+    else{
+        cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CellBlueTint.png"]];
+    }
+}
+
+
+
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
-    return cell;
+    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 768, 41)];
+    
+    if (section == 0) {
+        aView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"GreenHeader.png"]];
+    }
+    else if (section == 1) {
+        aView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"PurpleHeader.png"]];
+    }
+    else{
+        aView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HeaderBackground.png"]];
+    }
+    
+    CGRect labelFrame = CGRectMake(10,0,768-10,41);
+    
+    UILabel *myLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    myLabel.backgroundColor = [UIColor clearColor];
+    myLabel.textColor = [UIColor whiteColor];
+    myLabel.font = [UIFont fontWithName:@"Aller-Bold" size:17.0f];
+    myLabel.numberOfLines = 1;
+    myLabel.shadowColor = [UIColor darkGrayColor];
+    myLabel.shadowOffset = CGSizeMake(1.0,1.0);
+    myLabel.textAlignment = NSTextAlignmentCenter;
+    NSString *textForHeader = [NSString string];
+    
+    switch (section) {
+        case 0:
+            textForHeader = @"See your local weather forcast";
+            break;
+        case 1:
+            textForHeader = @"View dribbble popular shots";
+            break;
+        case 2:
+            textForHeader = @"See the current bestsellers";
+            break;
+            
+        default:
+            break;
+    }
+    
+    myLabel.text = textForHeader;
+    
+    
+    [aView addSubview:myLabel];
+    
+      return aView;
+    
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (float)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 41.0f;
+    
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
@@ -118,4 +143,10 @@
      */
 }
 
+- (void)viewDidUnload {
+    [self setDribbbleLabel:nil];
+    [self setWeatherLabel:nil];
+    [self setBestsellersLabel:nil];
+    [super viewDidUnload];
+}
 @end
