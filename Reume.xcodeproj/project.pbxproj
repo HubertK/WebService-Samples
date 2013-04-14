@@ -75,6 +75,16 @@
 		577FA17A170502FA008A2A88 /* Weather01.png in Resources */ = {isa = PBXBuildFile; fileRef = 577FA178170502FA008A2A88 /* Weather01.png */; };
 		577FA17D17050400008A2A88 /* Book-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 577FA17B170503FF008A2A88 /* Book-icon.png */; };
 		577FA17E17050400008A2A88 /* Book-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577FA17C170503FF008A2A88 /* Book-icon@2x.png */; };
+		579CC93E1712112500B558D2 /* RottenTomatoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 579CC93D1712112500B558D2 /* RottenTomatoes.m */; };
+		579CC94117136D8400B558D2 /* RottenTom.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC93F17136D8400B558D2 /* RottenTom.png */; };
+		579CC94217136D8400B558D2 /* RottenTom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC94017136D8400B558D2 /* RottenTom@2x.png */; };
+		579CC94517136DC900B558D2 /* RottenTomatoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579CC94417136DC900B558D2 /* RottenTomatoesViewController.m */; };
+		579CC94A1713829200B558D2 /* rotten.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC9461713829200B558D2 /* rotten.png */; };
+		579CC94B1713829200B558D2 /* fresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC9471713829200B558D2 /* fresh.png */; };
+		579CC94C1713829200B558D2 /* fresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC9481713829200B558D2 /* fresh@2x.png */; };
+		579CC94D1713829200B558D2 /* rotten@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC9491713829200B558D2 /* rotten@2x.png */; };
+		579CC950171385B900B558D2 /* CertifiedFresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC94E171385B900B558D2 /* CertifiedFresh.png */; };
+		579CC951171385B900B558D2 /* CertifiedFresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CC94F171385B900B558D2 /* CertifiedFresh@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +177,18 @@
 		577FA178170502FA008A2A88 /* Weather01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Weather01.png; sourceTree = "<group>"; };
 		577FA17B170503FF008A2A88 /* Book-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-icon.png"; sourceTree = "<group>"; };
 		577FA17C170503FF008A2A88 /* Book-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-icon@2x.png"; sourceTree = "<group>"; };
+		579CC93C1712112500B558D2 /* RottenTomatoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenTomatoes.h; sourceTree = "<group>"; };
+		579CC93D1712112500B558D2 /* RottenTomatoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoes.m; sourceTree = "<group>"; };
+		579CC93F17136D8400B558D2 /* RottenTom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RottenTom.png; sourceTree = "<group>"; };
+		579CC94017136D8400B558D2 /* RottenTom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RottenTom@2x.png"; sourceTree = "<group>"; };
+		579CC94317136DC900B558D2 /* RottenTomatoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenTomatoesViewController.h; sourceTree = "<group>"; };
+		579CC94417136DC900B558D2 /* RottenTomatoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesViewController.m; sourceTree = "<group>"; };
+		579CC9461713829200B558D2 /* rotten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotten.png; sourceTree = "<group>"; };
+		579CC9471713829200B558D2 /* fresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fresh.png; sourceTree = "<group>"; };
+		579CC9481713829200B558D2 /* fresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fresh@2x.png"; sourceTree = "<group>"; };
+		579CC9491713829200B558D2 /* rotten@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rotten@2x.png"; sourceTree = "<group>"; };
+		579CC94E171385B900B558D2 /* CertifiedFresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CertifiedFresh.png; sourceTree = "<group>"; };
+		579CC94F171385B900B558D2 /* CertifiedFresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CertifiedFresh@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +271,12 @@
 		3985C8E716387086004FB790 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				579CC94E171385B900B558D2 /* CertifiedFresh.png */,
+				579CC94F171385B900B558D2 /* CertifiedFresh@2x.png */,
+				579CC9461713829200B558D2 /* rotten.png */,
+				579CC9471713829200B558D2 /* fresh.png */,
+				579CC9481713829200B558D2 /* fresh@2x.png */,
+				579CC9491713829200B558D2 /* rotten@2x.png */,
 				577FA1651704FC02008A2A88 /* CellBlueTint.png */,
 				577FA16F1704FDA4008A2A88 /* CellPurpleTint.png */,
 				577FA1701704FDA4008A2A88 /* CellGreenTint.png */,
@@ -264,6 +292,8 @@
 				577FA178170502FA008A2A88 /* Weather01.png */,
 				577FA17B170503FF008A2A88 /* Book-icon.png */,
 				577FA17C170503FF008A2A88 /* Book-icon@2x.png */,
+				579CC93F17136D8400B558D2 /* RottenTom.png */,
+				579CC94017136D8400B558D2 /* RottenTom@2x.png */,
 				398D2C4B16F7C86F00588D3D /* CloseWindow@2x.png */,
 				398D2C4C16F7C86F00588D3D /* CloseWindow.png */,
 				3985C8DA16387036004FB790 /* Heart.png */,
@@ -340,6 +370,7 @@
 		39BDE34C15FBEA9700EE4411 /* Reume */ = {
 			isa = PBXGroup;
 			children = (
+				579CC93B171210DB00B558D2 /* Rotten Tomatoes */,
 				3985C8CE16386F9A004FB790 /* Dribble */,
 				3985C8D516387015004FB790 /* Shared */,
 				3985C8E61638704B004FB790 /* Weather */,
@@ -368,6 +399,17 @@
 				577FA15B1704FAB9008A2A88 /* handsomebold.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		579CC93B171210DB00B558D2 /* Rotten Tomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				579CC93C1712112500B558D2 /* RottenTomatoes.h */,
+				579CC93D1712112500B558D2 /* RottenTomatoes.m */,
+				579CC94317136DC900B558D2 /* RottenTomatoesViewController.h */,
+				579CC94417136DC900B558D2 /* RottenTomatoesViewController.m */,
+			);
+			name = "Rotten Tomatoes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +506,14 @@
 				577FA17A170502FA008A2A88 /* Weather01.png in Resources */,
 				577FA17D17050400008A2A88 /* Book-icon.png in Resources */,
 				577FA17E17050400008A2A88 /* Book-icon@2x.png in Resources */,
+				579CC94117136D8400B558D2 /* RottenTom.png in Resources */,
+				579CC94217136D8400B558D2 /* RottenTom@2x.png in Resources */,
+				579CC94A1713829200B558D2 /* rotten.png in Resources */,
+				579CC94B1713829200B558D2 /* fresh.png in Resources */,
+				579CC94C1713829200B558D2 /* fresh@2x.png in Resources */,
+				579CC94D1713829200B558D2 /* rotten@2x.png in Resources */,
+				579CC950171385B900B558D2 /* CertifiedFresh.png in Resources */,
+				579CC951171385B900B558D2 /* CertifiedFresh@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +543,8 @@
 				3985C8EC1638713F004FB790 /* ShotsViewController.m in Sources */,
 				3985C8EF163873F3004FB790 /* APIContentViewController.m in Sources */,
 				577FA1641704FB7D008A2A88 /* SelectAPIViewController.m in Sources */,
+				579CC93E1712112500B558D2 /* RottenTomatoes.m in Sources */,
+				579CC94517136DC900B558D2 /* RottenTomatoesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,4 +18,5 @@ typedef void (^HKConnectionBlock)(NSData* resultData, NSError *error);
 
 
 - (id)initWithURL:(NSURL*)URL progressHudView:(UIView*)HUDdisplayView callback:(HKConnectionBlock)block;
+- (id)initWithURL:(NSURL *)URL callback:(HKConnectionBlock)block;
 @end

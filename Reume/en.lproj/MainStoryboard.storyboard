@@ -96,18 +96,18 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Section-3" id="AdA-lf-Byl">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="74" id="obU-bQ-2O6">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="74" id="obU-bQ-2O6">
                                         <rect key="frame" x="0.0" y="214" width="768" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="73"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="748" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Book-icon.png" id="7gm-dm-atl">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="RottenTom.png" id="7gm-dm-atl">
                                                     <rect key="frame" x="20" y="5" width="64" height="64"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NY Times Bestsellers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LSc-A9-yNU">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rotten Tomatoes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LSc-A9-yNU">
                                                     <rect key="frame" x="92" y="13" width="656" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -117,6 +117,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="xS5-Fm-OFP" kind="push" id="QIE-aO-w8M"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -328,6 +331,56 @@
             </objects>
             <point key="canvasLocation" x="3017" y="1322"/>
         </scene>
+        <!--Rotten Tomatoes View Controller-->
+        <scene sceneID="PwN-DX-wfh">
+            <objects>
+                <tableViewController storyboardIdentifier="RottenTomatoesViewController" id="xS5-Fm-OFP" customClass="RottenTomatoesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="u3k-pP-AGI">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="XvK-OL-fSb" detailTextLabel="7IM-lM-N4y" imageView="QMV-TT-lnr" rowHeight="82" style="IBUITableViewCellStyleSubtitle" id="W1O-oW-XMb">
+                                <rect key="frame" x="0.0" y="22" width="768" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XvK-OL-fSb">
+                                            <rect key="frame" x="79" y="21" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7IM-lM-N4y">
+                                            <rect key="frame" x="79" y="43" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="fresh.png" id="QMV-TT-lnr">
+                                            <rect key="frame" x="8" y="8" width="61" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xS5-Fm-OFP" id="CxI-ID-a9s"/>
+                            <outlet property="delegate" destination="xS5-Fm-OFP" id="00C-Wt-kMD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1bQ-Ht-wZH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imb-LX-8D6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="3073"/>
+        </scene>
         <!--Shots View Controller-->
         <scene sceneID="WWV-QL-nYE">
             <objects>
@@ -515,67 +568,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Book-icon.png" width="64" height="64"/>
         <image name="Comment.png" width="48" height="48"/>
         <image name="Heart.png" width="48" height="48"/>
         <image name="Image_01.png" width="768" height="911"/>
+        <image name="RottenTom.png" width="64" height="64"/>
         <image name="View.png" width="32" height="32"/>
         <image name="Weather01.png" width="64" height="64"/>
         <image name="dribbble-icon.png" width="64" height="64"/>
+        <image name="fresh.png" width="61" height="64"/>
         <image name="house.png" width="26" height="26"/>
         <image name="world.png" width="26" height="26"/>
     </resources>
-    <classes>
-        <class className="APIContentViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/APIContentViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="didChangeAPISelection:"/>
-                <relationship kind="outlet" name="APIPicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="APIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/APIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="contitionImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="currentCondition" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="currentTemp" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="humidity" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="latitudeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="longitudeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="precip" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="weatherTable" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="Dribble_Cell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Dribble_Cell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="commentButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="commentCount" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eyeBallButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="likesCount" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="previewButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="userName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="viewsCount" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="HKFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HKFirstViewController.h"/>
-        </class>
-        <class className="SelectAPIViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectAPIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bestsellersLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="dribbbleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="weatherLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ShotsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShotsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

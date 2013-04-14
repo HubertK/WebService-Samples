@@ -23,6 +23,16 @@
 
     return self;
 }
+- (id)initWithURL:(NSURL *)URL callback:(HKConnectionBlock)block{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    self.callBackBlock = block;
+    
+    [self sendRequest:URL];
+    return self;
+}
 
 - (id)initWithURL:(NSURL*)URL progressHudView:(UIView*)HUDdisplayView callback:(HKConnectionBlock)block{
     self = [super init];
@@ -37,6 +47,7 @@
     
     return self;
 }
+
 - (void)sendRequest:(NSURL*)URL view:(UIView*)viewForHUD{
     self.requestdata = [NSMutableData data];
 
@@ -48,7 +59,14 @@
     [connection start];
     
 }
+- (void)sendRequest:(NSURL*)URL{
+    self.requestdata = [NSMutableData data];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:self];
+    
+    [connection start];
 
+}
 
 #pragma -mark
 #pragma mark NSURLConnection
