@@ -122,14 +122,14 @@
 		398D2C4B16F7C86F00588D3D /* CloseWindow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CloseWindow@2x.png"; sourceTree = "<group>"; };
 		398D2C4C16F7C86F00588D3D /* CloseWindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseWindow.png; sourceTree = "<group>"; };
 		39B43A9C171A520A0082B5E8 /* Todo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Todo.rtf; sourceTree = "<group>"; };
-		39BDE34215FBEA9700EE4411 /* Reume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BDE34215FBEA9700EE4411 /* WebService Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebService Samples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BDE34615FBEA9700EE4411 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39BDE34815FBEA9700EE4411 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39BDE34A15FBEA9700EE4411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		39BDE34E15FBEA9700EE4411 /* Reume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reume-Info.plist"; sourceTree = "<group>"; };
+		39BDE34E15FBEA9700EE4411 /* WebService Samples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebService Samples-Info.plist"; sourceTree = "<group>"; };
 		39BDE35015FBEA9700EE4411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39BDE35215FBEA9700EE4411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		39BDE35415FBEA9700EE4411 /* Reume-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reume-Prefix.pch"; sourceTree = "<group>"; };
+		39BDE35415FBEA9700EE4411 /* WebService Samples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebService Samples-Prefix.pch"; sourceTree = "<group>"; };
 		39BDE35515FBEA9700EE4411 /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
 		39BDE35615FBEA9700EE4411 /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
 		39BDE35915FBEA9700EE4411 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 		39BDE33715FBEA9700EE4411 = {
 			isa = PBXGroup;
 			children = (
-				39BDE34C15FBEA9700EE4411 /* Reume */,
+				39BDE34C15FBEA9700EE4411 /* WebService Samples */,
 				39BDE34515FBEA9700EE4411 /* Frameworks */,
 				39BDE34315FBEA9700EE4411 /* Products */,
 			);
@@ -350,7 +350,7 @@
 		39BDE34315FBEA9700EE4411 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39BDE34215FBEA9700EE4411 /* Reume.app */,
+				39BDE34215FBEA9700EE4411 /* WebService Samples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		39BDE34C15FBEA9700EE4411 /* Reume */ = {
+		39BDE34C15FBEA9700EE4411 /* WebService Samples */ = {
 			isa = PBXGroup;
 			children = (
 				39B43A9C171A520A0082B5E8 /* Todo.rtf */,
@@ -380,16 +380,17 @@
 				3985C8E8163870A5004FB790 /* Resources */,
 				39BDE34D15FBEA9700EE4411 /* Supporting Files */,
 			);
+			name = "WebService Samples";
 			path = Reume;
 			sourceTree = "<group>";
 		};
 		39BDE34D15FBEA9700EE4411 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				39BDE34E15FBEA9700EE4411 /* Reume-Info.plist */,
+				39BDE34E15FBEA9700EE4411 /* WebService Samples-Info.plist */,
 				39BDE34F15FBEA9700EE4411 /* InfoPlist.strings */,
 				39BDE35215FBEA9700EE4411 /* main.m */,
-				39BDE35415FBEA9700EE4411 /* Reume-Prefix.pch */,
+				39BDE35415FBEA9700EE4411 /* WebService Samples-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -418,9 +419,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		39BDE34115FBEA9700EE4411 /* Reume */ = {
+		39BDE34115FBEA9700EE4411 /* WebService Samples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "Reume" */;
+			buildConfigurationList = 39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "WebService Samples" */;
 			buildPhases = (
 				39BDE33E15FBEA9700EE4411 /* Sources */,
 				39BDE33F15FBEA9700EE4411 /* Frameworks */,
@@ -430,9 +431,9 @@
 			);
 			dependencies = (
 			);
-			name = Reume;
+			name = "WebService Samples";
 			productName = Reume;
-			productReference = 39BDE34215FBEA9700EE4411 /* Reume.app */;
+			productReference = 39BDE34215FBEA9700EE4411 /* WebService Samples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +446,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Hubert Kunnemeyer";
 			};
-			buildConfigurationList = 39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "Reume" */;
+			buildConfigurationList = 39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "WebService Samples" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -457,7 +458,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39BDE34115FBEA9700EE4411 /* Reume */,
+				39BDE34115FBEA9700EE4411 /* WebService Samples */,
 			);
 		};
 /* End PBXProject section */
@@ -633,14 +634,14 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reume/Reume-Prefix.pch";
+				GCC_PREFIX_HEADER = "Reume/WebService Samples-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"”$(OBJROOT)/UninstalledProducts/include”",
 					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
-				INFOPLIST_FILE = "Reume/Reume-Info.plist";
+				INFOPLIST_FILE = "Reume/WebService Samples-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebService Samples";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -653,14 +654,14 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reume/Reume-Prefix.pch";
+				GCC_PREFIX_HEADER = "Reume/WebService Samples-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"”$(OBJROOT)/UninstalledProducts/include”",
 					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
-				INFOPLIST_FILE = "Reume/Reume-Info.plist";
+				INFOPLIST_FILE = "Reume/WebService Samples-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebService Samples";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -668,7 +669,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "Reume" */ = {
+		39BDE33C15FBEA9700EE4411 /* Build configuration list for PBXProject "WebService Samples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BDE36915FBEA9700EE4411 /* Debug */,
@@ -677,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "Reume" */ = {
+		39BDE36B15FBEA9800EE4411 /* Build configuration list for PBXNativeTarget "WebService Samples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BDE36C15FBEA9800EE4411 /* Debug */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="nXa-W6-ET8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -24,14 +24,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879" y="-74"/>
+            <point key="canvasLocation" x="2877" y="-66"/>
         </scene>
         <!--SelectAPI View Controller - Web Service Selection-->
         <scene sceneID="Rdu-WT-AQI">
             <objects>
                 <tableViewController storyboardIdentifier="SelectAPIViewController" id="vQN-z6-ExN" customClass="SelectAPIViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ewf-Z6-svU">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -140,50 +140,12 @@
             </objects>
             <point key="canvasLocation" x="1928" y="1686"/>
         </scene>
-        <!--Content View Controller - API Parsing-->
-        <scene sceneID="8bv-fA-eVZ">
-            <objects>
-                <viewController id="0Dd-Cu-grD" customClass="APIContentViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H6b-VA-SkA">
-                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="3Kq-Wt-VOZ">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="955"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.30776579483695654" green="0.30776579483695654" blue="0.30776579483695654" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="zHz-n6-r7k">
-                                <rect key="frame" x="0.0" y="7" width="768" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Local Weather"/>
-                                    <segment title="Dribble"/>
-                                    <segment title=""/>
-                                </segments>
-                                <connections>
-                                    <action selector="didChangeAPISelection:" destination="0Dd-Cu-grD" eventType="valueChanged" id="6a4-ZP-E4M"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="API Parsing" image="world.png" id="Drm-wZ-lN3"/>
-                    <connections>
-                        <outlet property="APIPicker" destination="zHz-n6-r7k" id="ppi-t2-JP1"/>
-                        <outlet property="contentView" destination="3Kq-Wt-VOZ" id="CJP-2F-l2Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jjW-jM-nIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3873" y="-201"/>
-        </scene>
         <!--View Controller - Data-->
         <scene sceneID="13">
             <objects>
                 <viewController storyboardIdentifier="WeatherView" id="3" customClass="APIViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EAb-ax-NyS">
@@ -215,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="62w-aH-pDr">
-                                <rect key="frame" x="0.0" y="279" width="768" height="681"/>
+                                <rect key="frame" x="0.0" y="279" width="768" height="632"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.21520389619999999" green="0.26566255090000002" blue="0.35204082730000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -336,7 +298,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="RottenTomatoesViewController" id="xS5-Fm-OFP" customClass="RottenTomatoesViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="u3k-pP-AGI">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -386,12 +348,31 @@
             <objects>
                 <tableViewController storyboardIdentifier="DribbleView" id="ouk-cc-nYI" customClass="ShotsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="169" sectionHeaderHeight="10" sectionFooterHeight="10" id="4iJ-Yr-Giy">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.21520389619999999" green="0.26566255090000002" blue="0.35204082730000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="ULO-pH-P5X">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="63"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="KXk-rI-YzF">
+                                    <rect key="frame" x="20" y="10" width="728" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Popular"/>
+                                        <segment title="Debuts"/>
+                                        <segment title="Everyone"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="didChangeShotType:" destination="ouk-cc-nYI" eventType="valueChanged" id="wIq-Hq-Qdm"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Dribble Cell" rowHeight="170" id="v2X-WV-6KV" customClass="Dribble_Cell">
-                                <rect key="frame" x="0.0" y="54" width="768" height="172"/>
+                                <rect key="frame" x="0.0" y="97" width="768" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="45" y="1" width="678" height="169"/>
@@ -502,6 +483,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="DzL-pK-BWE"/>
+                    <connections>
+                        <outlet property="shotTypePicker" destination="KXk-rI-YzF" id="lq4-Z4-3mE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBM-kk-cwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -520,7 +504,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="gX0-Ys-XDZ" kind="relationship" relationship="viewControllers" id="27"/>
-                        <segue destination="0Dd-Cu-grD" kind="relationship" relationship="viewControllers" id="ojV-Yj-F42"/>
+                        <segue destination="nXa-W6-ET8" kind="relationship" relationship="viewControllers" id="OwD-b4-9jF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -547,10 +531,11 @@
             </objects>
             <point key="canvasLocation" x="1905" y="-74"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Web Services-->
         <scene sceneID="b9d-9a-ocW">
             <objects>
                 <navigationController id="nXa-W6-ET8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web Services" image="world.png" id="hBd-vJ-QEp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FvP-e2-F9L">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>

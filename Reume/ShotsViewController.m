@@ -24,6 +24,10 @@
 @property (strong, nonatomic) UIButton *closeImageButton;
 @property (strong, nonatomic) MBProgressHUD *HUD;
 @property (strong, nonatomic) UIScrollView *imageScrollView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *shotTypePicker;
+@property (nonatomic) ShotTypes shotType;
+
+- (IBAction)didChangeShotType:(id)sender;
 
 @end
 
@@ -43,17 +47,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _lastIndex = 999999999;
+    _lastIndex = 999999999; 
     _pointOfInsertion = 99999;
     _shadeView = [[UIView alloc]initWithFrame:self.tableView.frame];
     _shadeView.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.900];
-    DribbleAPI *da = [[DribbleAPI alloc]init];
-    [da setHudView:self.view];
-    da.delegate = self;
-    [da shotsForType:kShotTypePopular page:0];
+    
+    [self queryDibbbleForShot:kShotTypePopular]; //Begin with Popular shots
+   
 
 }
-
+- (void)queryDibbbleForShot:(ShotTypes)shotType{
+    [_results removeAllObjects]; //Remove any previous shot objects if any
+    
+    DribbleAPI *da = [[DribbleAPI alloc]init];
+    [da setHudView:self.view]; //MBProgressView HUD
+    da.delegate = self;
+    [da shotsForType:shotType page:0];
+    
+    NSString *title = [NSString string];
+    switch (shotType) {
+        case kShotTypePopular:
+            title = @"Popular";
+            break;
+        case kShotTypeDebuts:
+            title = @"Debuts";
+            break;
+        case kShotsTypeEveryone:
+            title = @"Everyone";
+            break;
+            
+        default:
+            title = @"";
+            break;
+    }
+    [self.navigationItem setTitle:title];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -187,6 +215,8 @@
    cell.backgroundColor = [UIColor colorWithRed:0.381 green:0.511 blue:0.427 alpha:1.00f];
     }
 }
+
+
 #pragma -mark
 #pragma mark DribbleAPI Delegate
 - (void)dribleAPI:(DribbleAPI *)API didFailWithError:(NSError *)error{
@@ -210,14 +240,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Shots *shot = _results[indexPath.section];
     
 }
 #pragma -mark
 #pragma mark Segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath  *idxPath = [self.tableView indexPathForSelectedRow];
-    Shots *shot = [_results objectAtIndex:idxPath.section];
 
 }
 
@@ -291,12 +319,7 @@
          }];
     
     
- 
-   
-
-       
-   
-    
+        //Background overlay(Shade) for looks and interaction prevention...
     _shadeView.frame = CGRectMake(0, self.tableView.contentOffset.y, self.view.frame.size.width, self.view.frame.size.height);
     [self.view insertSubview:_shadeView belowSubview:_largeView];
     
@@ -327,18 +350,25 @@
 
 }
 
-
-
-
-
-
-
-
-
-
+- (IBAction)didChangeShotType:(id)sender {
+        //The selected index of the segmentedControl coresponds to the ShotType enumeration in the DribbleAPI Class
+        //0 = Popular
+        //1 = Debuts
+        //2 = Everyone
+        //So all we gotta do is query the selected index
+    [self queryDibbbleForShot:_shotTypePicker.selectedSegmentIndex];
+}
 
 
 - (void)viewDidUnload {
+    [self setShotTypePicker:nil];
     [super viewDidUnload];
 }
+
+
+
+
+
+
+
 @end
