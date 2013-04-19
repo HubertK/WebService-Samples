@@ -56,5 +56,5 @@ And RottenTomatoes has only one delegate method right now (This will change in t
 
 Thats it for now. It's still very much a work in progress...Any contributions and/or suggestions are always welcome.
 
-If you plan on using any of this code for yourself please change the API Keys! I've temporaroly left mine in for demonstration purposes. 
+If you plan on using any of this code for yourself please change the API Keys! I've temporarily left mine in for demonstration purposes. 
 ===
